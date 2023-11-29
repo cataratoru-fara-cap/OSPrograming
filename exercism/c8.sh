@@ -5,10 +5,10 @@
 fiecare_rand () {
     num_files=$1
     
-    while (( num_files -gt 0 ));do
-        echo "$i" >> file
+    while (( $num_files>=0 ));do
+        echo "$num_files" >> $1.txt
         sleep 1
-        (($sum--))
+        (( num_files-- ))
     done 
 }
 

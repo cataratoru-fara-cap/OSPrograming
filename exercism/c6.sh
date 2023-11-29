@@ -8,4 +8,4 @@ for file in $(ls); do
         sum=$(($sum + 1))
     fi
 done
-echo "Nr total de fisiere este $sum" >> {"$sum.fisiere_fisiere"}
+echo "Nr total de fisiere este $sum" >> "$sum.fisiere_fisiere"
